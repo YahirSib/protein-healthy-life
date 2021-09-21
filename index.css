@@ -1,0 +1,390 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+nav{
+  position: absolute;
+  background: transparent;
+}
+header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("img/fondo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-info{
+  color: white;
+  font-family: 'Exo 2';
+  width: 90%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.header-info h1{
+  font-size: 3.2em;
+  text-align: center;
+}
+.header-info h2{
+  text-align: center;
+}
+
+.header-info a{
+  padding: 5px 15px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 16px;
+  transition: 0.5s all ease;
+}
+.header-info a:hover{
+  background-color: #FAE9C1;
+  transition: 0.5s all ease;
+  border: 2px solid #FAE9C1;
+  color: black;
+}
+
+/*PROTEINA */
+.proteina{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 45px;
+}
+.proteina-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 45%;
+  min-width: 320px;
+  padding: 10px;
+}
+.proteina-info h1{
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2.5px solid #637AAD;
+  color: #637AAD;
+  font-style: italic;
+  padding: 10px 20px;
+}
+.proteina-info p{
+  text-align: justify;
+}
+.proteina-img{
+  width: 45%;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.proteina-img img{
+  width: 90%;
+  border: 2px solid #637AAD;
+}
+
+/*BENEFICIOS*/
+
+.beneficios{
+  padding-top: 45px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(180deg, white 50%, #F7ECD4 0%);
+}
+.beneficios-titulo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.beneficios-titulo h1{
+  text-align: center;
+  width: 90%;
+}
+
+.beneficios-card{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card{
+  position: relative;
+  width: 25%;
+  min-width: 320px;
+  height: 400px;
+  background-color: #637AAD;
+  color: white;
+  margin: 10px;
+}
+.card:hover .back{
+  transition: 0.5s all ease;
+  margin-top: 0%;
+  opacity: 1;
+}
+.card:hover .front{
+  transition: 0.5s all ease;
+  transform: scale(0,0);
+}
+
+.front{
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: scale(1,1);
+  transition: 0.5s all ease;
+}
+.front h1{
+  font-size: 30px;
+  text-align: center;
+  width: 80%;
+  font-style: italic;
+}
+.front h2{
+  font-size: 20px;
+  text-align: center;
+}
+.back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20%;
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.back p{
+  text-align: justify;
+  padding: 10px;
+  margin: 0px;
+}
+
+/*CORSUMIR*/
+
+.consumir{
+  padding-top: 45px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7ECD4;
+}
+.consumir-img{
+  width: 50%;
+  min-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.consumir-img img{
+  width: 90%;
+}
+.consumir-info{
+  width: 50%;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 10px;
+}
+.consumir-info h1{
+  color: #637AAD;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 2px solid #637AAD;
+  padding: 10px 0px;
+}
+.consumir-info p{
+  text-align:justify;
+}
+
+/*TABLE*/
+
+.tabla{
+  padding: 45px 0px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tabla h1{
+  text-align: center;
+  margin: 20px 5px;
+  padding: 10px 25px;
+  font-style: italic;
+  color: #637AAD;
+  border-bottom: 2px solid #637AAD;
+}
+table{
+  width: 95%;
+  border: 2px solid #637AAD;
+}
+table thead{
+  background-color: #637AAD;
+}
+thead tr td{
+  width: 25%;
+  text-align: center;
+  border-spacing: 0;
+  color: white;
+  padding: 2px;
+}
+tbody tr td{
+  text-align: center;
+  border: 2px solid #637AAD;
+  border-spacing: 0;
+  padding: 2px;
+}
+
+/*footer*/
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #637AAD;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding: 0%;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #2E3E61;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+        font-size: 14px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        text-decoration: none;
+        cursor: pointer;
+    color: #fff;
+    font-weight: 200;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+/*MENU*/
+
+#menu{
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar-brand{
+  color: white !important;
+}
+#text{
+  color: white;
+}
+#text-active{
+  color: #FAE9C1;
+  border-bottom: 2px solid #FAE9C1;
+}
+
+#text:hover{
+  color: #FAE9C1;
+}
+
+@media (min-width: 992px){
+  #offcanvasNavbar{
+    background-color: transparent !important;
+  }
+}
+#offcanvasNavbar{
+  background-color: #637AAD;
+}
+#bot{
+  border: none;
+  box-shadow: none;
+}
+#h5{
+  color: white;
+}
+#ham{
+  background-image: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(240,240,240, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/></svg>") !important;
+}
